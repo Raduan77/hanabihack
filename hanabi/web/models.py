@@ -16,6 +16,9 @@ class Language(models.Model):
     skill = models.IntegerField(default=1)
     name = models.CharField(max_length=25)
 
+    def __str__(self):
+        return f"{self.name}({self.skill})"
+
 
 class Session(models.Model):
     participants = models.ManyToManyField(Member, related_name="sessions")
