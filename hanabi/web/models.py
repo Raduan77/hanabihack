@@ -20,6 +20,13 @@ class Language(models.Model):
         return f"{self.name}({self.skill})"
 
 
+class Rank(models.Model):
+    language = models.ForeignKey(Language, on_delete=models.CASCADE)
+    user = models.ForeignKey(Member, on_delete=models.CASCADE)
+    amount = models.IntegerField(default=0)
+    
+
+
 class Session(models.Model):
     participants = models.ManyToManyField(Member, related_name="sessions")
     language = models.ForeignKey(
