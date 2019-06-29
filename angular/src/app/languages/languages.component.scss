@@ -1,0 +1,52 @@
+.container {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.title {
+    width: 100%;
+    white-space:nowrap;
+}
+
+.user-name {
+    display:inline-block;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.user-icon {
+    display:inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.badges {
+    margin-top: 30px;
+}
+
+.cart {
+    padding: 20px;
+    width: 100%;
+    white-space:nowrap;
+}
+
+.cart div {
+    display:inline-block;
+}
+
+.icon-language {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px; 
+}
+
+.link {
+    color: #212529;
+}
+
+.link:hover {
+    color: #212588;
+}

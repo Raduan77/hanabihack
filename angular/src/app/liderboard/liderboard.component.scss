@@ -1,0 +1,42 @@
+.container {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.title {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.buttons {
+    margin-top: 40px;
+    white-space: nowrap;
+}
+
+.buttons div {
+    display:inline-block;
+}
+
+button {
+    height: 40px;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+td {
+    height: 35px;
+}
+
+.place {
+    font-size: 15px;
+    color: darkslateblue;
+    width: 100%;
+    text-align: center;
+}
+
