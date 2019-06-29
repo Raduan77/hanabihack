@@ -7,3 +7,9 @@ class MemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Member
         fields = ("name",)
+
+
+class LanguageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.Language
+        fields = ("name", "skill")

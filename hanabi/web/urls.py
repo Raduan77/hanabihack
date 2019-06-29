@@ -8,6 +8,8 @@ from . import views
 api_urls = [
     path("api/v1/token", auth_views.obtain_auth_token, name="api-token-auth"),
     path("api/v1/login", views.LoginView.as_view(), name="api-login"),
+    path("api/v1/language/list", views.LanguageListAPIView.as_view(), name="language-list"),
+    path("api/v1/language/<int:pk>/leaderboard", views.LeaderBoardAPIView.as_view(), name="language-leaderboard"),
 ]
 
 urlpatterns = api_urls

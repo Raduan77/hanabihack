@@ -24,7 +24,7 @@ class Rank(models.Model):
     language = models.ForeignKey(Language, on_delete=models.CASCADE)
     user = models.ForeignKey(Member, on_delete=models.CASCADE)
     amount = models.IntegerField(default=0)
-    
+
 
 
 class Session(models.Model):
@@ -33,8 +33,12 @@ class Session(models.Model):
         Language, on_delete=models.CASCADE, related_name="sessions"
     )
     connected = JSONField(blank=True)
+    finished = models.BooleanField(default=False)
 
     result = JSONField(blank=True)
+
+    def is_closed(self):
+        return len(self.connected.keys()) == 2
 
 
 class Exercise(models.Model):
