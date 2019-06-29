@@ -28,6 +28,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { StartComponent } from './start/start.component';
 import { LanguagesComponent } from './languages/languages.component';
+import { LiderboardComponent } from './liderboard/liderboard.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { LanguagesComponent } from './languages/languages.component';
     CarouselComponent,
     TabsComponent,
     StartComponent,
-    LanguagesComponent
+    LanguagesComponent,
+    LiderboardComponent
   ],
   imports: [
     BrowserModule,

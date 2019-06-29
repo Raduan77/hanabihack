@@ -19,6 +19,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { StartComponent } from './start/start.component';
 import { LanguagesComponent } from './languages/languages.component';
+import { LiderboardComponent } from './liderboard/liderboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -39,7 +40,8 @@ const routes: Routes = [
   { path: 'carousel', component: CarouselComponent },
   { path: 'tabs', component: TabsComponent },
   { path: 'start', component: StartComponent },
-  { path: 'languages', component: LanguagesComponent}
+  { path: 'languages', component: LanguagesComponent},
+  { path: 'liderboard', component: LiderboardComponent}
 ];
 
 @NgModule({
