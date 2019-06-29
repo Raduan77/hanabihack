@@ -1,0 +1,36 @@
+<div class="container">
+<div class="title">
+    <img style="padding-top: -30px;" class="user-icon" src="https://avatars1.githubusercontent.com/u/17403443?s=460&v=4">
+    <div class="user-name">  
+      Artemiy Shirokov
+      <div style="font-size: 20px;">Skill level</div>
+    </div>
+</div>
+  
+  <div class="badges">
+    <div *ngFor="let j of [0, 1, 2, 3, 4, 5, 6]; let i = index">
+      <div style="height: 100%; width: 100%; background-color: #e2e2e2;" class="cart" *ngIf="i%2===0">
+      <a href="start" class="link">
+        <div style="width: 70%;">
+          <img class="icon-language" src="../../assets/images/java-icon.png">
+          Java
+        </div>
+        <div style="text-align: right; width: 30%;">
+            10 lvl
+        </div>
+      </a>
+    </div>
+    <div style="height: 100%; width: 100%;" class="cart" *ngIf="i%2===1">
+        <a href="start" class="link">
+          <div style="width: 70%;">
+            <img class="icon-language" src="../../assets/images/java-icon.png">
+            Java
+          </div>
+          <div style="text-align: right; width: 30%;">
+              10 lvl
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>  

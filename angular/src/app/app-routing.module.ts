@@ -18,6 +18,7 @@ import { TooltipsComponent } from './tooltips/tooltips.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { StartComponent } from './start/start.component';
+import { LanguagesComponent } from './languages/languages.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -37,7 +38,8 @@ const routes: Routes = [
   { path: 'tooltips', component: TooltipsComponent },
   { path: 'carousel', component: CarouselComponent },
   { path: 'tabs', component: TabsComponent },
-  { path: 'start', component: StartComponent }
+  { path: 'start', component: StartComponent },
+  { path: 'languages', component: LanguagesComponent}
 ];
 
 @NgModule({

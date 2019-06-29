@@ -27,6 +27,7 @@ import { TooltipsComponent } from './tooltips/tooltips.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { StartComponent } from './start/start.component';
+import { LanguagesComponent } from './languages/languages.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { StartComponent } from './start/start.component';
     TooltipsComponent,
     CarouselComponent,
     TabsComponent,
-    StartComponent
+    StartComponent,
+    LanguagesComponent
   ],
   imports: [
     BrowserModule,

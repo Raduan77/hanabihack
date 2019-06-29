@@ -12,13 +12,15 @@
     font-size: 50px;
 }
 
-.icon {
+.icon-container {
     cursor: pointer;
     font-size: 20px;
-    padding: 5px;
     height: 100%;
-    width: 100%;
-    margin: 0;
+}
+
+.icon {
+    height: 100%;
+    width: 30px;
 }
 
 .input-field {
