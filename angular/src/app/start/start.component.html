@@ -1,38 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<body>
-	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-85 p-b-20">
-				<form class="login100-form validate-form">
-					<div style="width: 100%; text-align: center; font-size: 40px; margin-top: -80px;">
-			
-          </div>
+				
+					<div style="width: 100%; text-align: center; font-size: 40px; margin-top: -80px;"></div>
 					<span class="login100-form-avatar">
 						<img src="../../assets/images/start/ierog1.png" alt="AVATAR">
 					</span>
 
-					<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
-              <input style="font-size: 14px;" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-					</div>
+					<form #form="ngForm" novalidate (ngSubmit)="onSubmit(myForm)">
+						<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter username">
+							<input ngModel value="aaa" name="email" style="font-size: 14px;" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+						</div>
 
-					<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
-              <input style="font-size: 14px;" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          
-					<div class="container-login100-form-btn">
-              <button type="button" class="btn btn-primary btn-fw" style="background-color: rgb(233, 0, 0); height: 40px; width: 300px;">Enter</button>
-					</div>
-				</form>
+						<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
+							<input ngModel name="password" style="font-size: 14px;" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+					
+						<div class="container-login100-form-btn">
+						<button type="button" class="btn btn-primary btn-fw" style="background-color: rgb(233, 0, 0); height: 40px; width: 300px;"
+						(click)="Login(form)">Enter</button>
+						</div>
+					</form>
 			</div>
 		</div>
 	</div>
 	
 
 	<div id="dropDownSelect1"></div>
-	
-
-</body>
-</html>
