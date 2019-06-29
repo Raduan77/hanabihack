@@ -1,10 +1,38 @@
 <div class="container">
   <div class="title">  
-        Liderboard
+        Leaderboard
+  </div>
+  <div class="place">
+    Your 100th place
   </div>
   
-  <table>
-    
+  <div class="buttons">
+      <div style="width: 40%;">
+        <button type="button" style="width: 100%;" class="btn btn-inverse-primary btn-fw">Test</button>
+      </div>
+      <div style="width: 20%;">
+
+      </div>
+      <div style="width: 40%;">
+        <button type="button" style="width: 100%;" class="btn btn-inverse-danger btn-fw">Algorithm</button>
+      </div>
+  </div>
+
+  <table class = "table-striped">
+      <tr>
+          <th>№</th> <th>Developer</th> <th style="text-align: right; padding-right: 10px;">Raiting</th>
+      </tr>
+      <tr *ngFor="let item of [0,1,1,1,1,1]; let i = index">
+          <td>i</td> <td>Artemiy Shirokov</td> <td style="text-align: right; padding-right: 10px;">9000</td>
+      </tr>
   </table>
-  
-  </div>  
+
+  <div style="position: relative;
+  float: right;
+  right: 50%;">
+      <ngb-pagination [collectionSize]="40" [pageSize]="10" [page]="1" aria-label="Default pagination" class="pagination-rounded-flat" style="position: relative;
+      float: left;
+      left: 50%;
+      margin-top: 20px;"></ngb-pagination>
+  </div>
+</div>  
