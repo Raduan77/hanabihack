@@ -1,0 +1,112 @@
+[
+  {
+    "model": "web.exercise",
+    "pk": 1,
+    "fields": {
+      "session": 1,
+      "text": "What is your favourite language",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  },
+  {
+    "model": "web.exercise",
+    "pk": 2,
+    "fields": {
+      "session": 1,
+      "text": "What is your favourite language",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  },
+  {
+    "model": "web.exercise",
+    "pk": 3,
+    "fields": {
+      "session": 1,
+      "text": "Is it possible to initiate a DOM event from javascript? For example, to simulate a mouse click on",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  },
+  {
+    "model": "web.exercise",
+    "pk": 4,
+    "fields": {
+      "session": 1,
+      "text": "What is your favourite language",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  },
+  {
+    "model": "web.exercise",
+    "pk": 5,
+    "fields": {
+      "session": 1,
+      "text": "What is your favourite language",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  },
+  {
+    "model": "web.exercise",
+    "pk": 6,
+    "fields": {
+      "session": 1,
+      "text": "What is your favourite language",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  },
+  {
+    "model": "web.exercise",
+    "pk": 7,
+    "fields": {
+      "session": 1,
+      "text": "What is your favourite language",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  },
+  {
+    "model": "web.exercise",
+    "pk": 8,
+    "fields": {
+      "session": 1,
+      "text": "What is your favourite language",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  },
+  {
+    "model": "web.exercise",
+    "pk": 9,
+    "fields": {
+      "session": 1,
+      "text": "What is your favourite language",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  },
+  {
+    "model": "web.exercise",
+    "pk": 10,
+    "fields": {
+      "session": 1,
+      "text": "What is your favourite language",
+      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
+      "creator": "Grooves",
+      "result": 0
+    }
+  }
+]
