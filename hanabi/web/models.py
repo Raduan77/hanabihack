@@ -11,7 +11,7 @@ class Member(models.Model):
 
 
 class Language(models.Model):
-    owners = models.ManyToManyField(Member, related_name="language")
+    owners = models.ManyToManyField(Member, related_name="languages", blank=True)
 
     skill = models.IntegerField(default=1)
     name = models.CharField(max_length=25)
