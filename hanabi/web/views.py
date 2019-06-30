@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 import json
+import operator
 
 from rest_framework import status
 from rest_framework.authtoken.models import Token
@@ -49,7 +50,8 @@ class LeaderBoardAPIView(APIView):
             json[member.name] = get_object_or_404(
                 models.Rank, language=language, user=member
             ).amount
-        return Response(json, status=status.HTTP_200_OK)
+        sorted_json = sorted(json.items(), key= operator.itemgetter(1), reverse=True)
+        return Response(sorted_json, status=status.HTTP_200_OK)
 
 
 class CheckSessionAPIView(APIView):
@@ -80,4 +82,6 @@ class GetOrCreateSessionAPIView(APIView):
             session.participants.add(member)
             session.connected[member.pk] = True
             return Response({"pk": session.pk}, status=status.HTTP_202_ACCEPTED)
+
+
 
