@@ -1,0 +1,52 @@
+.container {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.title {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.place {
+    font-size: 15px;
+    color: darkslateblue;
+    width: 100%;
+    text-align: center;
+}
+
+.question {
+    font-style: oblique;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(233, 0, 0);
+}
+
+.answers {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.answers tr {
+    height: 50%;
+    width: 50%;
+}
+
+.answers td {
+    border: 2px solid #f6f6f6;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+td:hover {
+    background-color: #f6f6f6;
+    color: #393939;
+  }
+

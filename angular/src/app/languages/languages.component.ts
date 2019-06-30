@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-languages',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LanguagesComponent implements OnInit {
 
-  constructor() { }
+  name = "";
+  subscription: any;
+  private routeSubscription: Subscription;
+  private querySubscription: Subscription;
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
+  constructor(private route: ActivatedRoute) { 
+    this.querySubscription = route.queryParams.subscribe(
+        (queryParam: any) => {
+          this.name = queryParam['name'];
+        }
+    );
+  }
+    
 }

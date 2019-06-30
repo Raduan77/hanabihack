@@ -29,6 +29,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { StartComponent } from './start/start.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { LiderboardComponent } from './liderboard/liderboard.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { LiderboardComponent } from './liderboard/liderboard.component';
     TabsComponent,
     StartComponent,
     LanguagesComponent,
-    LiderboardComponent
+    LiderboardComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
