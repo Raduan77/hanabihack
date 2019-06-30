@@ -52,6 +52,7 @@ class LeaderBoardAPIView(APIView):
                 models.Rank, language=language, user=member
             ).amount
         sorted_json = sorted(json.items(), key=operator.itemgetter(1), reverse=True)
+        print(sorted_json)
         return Response(sorted_json, status=status.HTTP_200_OK)
 
 
@@ -67,7 +68,7 @@ class GetOrCreateSessionAPIView(APIView):
         member = get_object_or_404(models.Member, user=request.user)
         sessions = list(
             filter(
-                lambda x: not x.is_closed(),
+                lambda x: not x.is_closed() and not x.finished,
                 models.Session.objects.filter(language=language).all(),
             )
         )
@@ -77,11 +78,13 @@ class GetOrCreateSessionAPIView(APIView):
             session.connected[member.pk] = True
             for exercise in models.Exercise.objects.all():
                 exercise.session = session
+            session.save()
             return Response({"pk": session.pk}, status=status.HTTP_201_CREATED)
         else:
             session = models.Session.objects.filter(language=language).all()[0]
             session.participants.add(member)
             session.connected[member.pk] = True
+            session.save()
             return Response({"pk": session.pk}, status=status.HTTP_202_ACCEPTED)
 
 
@@ -92,7 +95,10 @@ class TakeResultAPIView(APIView):
         language = session.language
         session.finished = True
         rank = models.Rank.objects.get(language=language, user=member)
+        print(rank.amount)
         rank.amount += random.randint(-30, 30)
+        rank.save()
+        print(rank.amount)
         return Response(status.HTTP_200_OK)
 
 
