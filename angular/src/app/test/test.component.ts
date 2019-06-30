@@ -1,13 +1,13 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-liderboard',
-  templateUrl: './liderboard.component.html',
-  styleUrls: ['./liderboard.component.scss']
+  selector: 'app-test',
+  templateUrl: './test.component.html',
+  styleUrls: ['./test.component.scss']
 })
-export class LiderboardComponent implements OnInit {
+export class TestComponent implements OnInit {
 
   ln = "";
   subscription: any;

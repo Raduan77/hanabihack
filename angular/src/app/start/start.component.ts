@@ -18,6 +18,6 @@ export class StartComponent implements OnInit {
   Login(form: NgForm) {
     console.log(form.value.email);
     console.log(form.value);
-    window.location.href = 'http://localhost:4200/languages';
+    window.location.href = 'http://localhost:4200/languages?name=Artemiy';
   }
 }
