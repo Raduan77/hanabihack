@@ -1,112 +1,57 @@
 [
-  {
-    "model": "web.exercise",
-    "pk": 1,
-    "fields": {
-      "session": 1,
-      "text": "What is your favourite language",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
-    }
-  },
-  {
-    "model": "web.exercise",
-    "pk": 2,
-    "fields": {
-      "session": 1,
-      "text": "What is your favourite language",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
-    }
-  },
-  {
+{
     "model": "web.exercise",
     "pk": 3,
     "fields": {
-      "session": 1,
-      "text": "Is it possible to initiate a DOM event from javascript? For example, to simulate a mouse click on",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
+        "session": null,
+        "text": "Is it possible to initiate a DOM event from javascript? For example, to simulate a mouse click on an element so that the javascript code will click on the user.",
+        "answers": "{\"answers\":[{\"answer\":\"Yes you can\",\"result\":\"True\"},{\"answer\":\"No you can not\",\"result\":\"False\"},{\"answer\":\"In some browsers you can\",\"result\":\"False\"}]}",
+        "creator": "grooves",
+        "result": 0
     }
-  },
-  {
+},
+{
     "model": "web.exercise",
     "pk": 4,
     "fields": {
-      "session": 1,
-      "text": "What is your favourite language",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
+        "session": null,
+        "text": "Which operator of these - performs not only mathematical operations?",
+        "answers": "{\"answers\":[{\"answer\":\"*\",\"result\":\"False\"},{\"answer\":\"/\",\"result\":\"False\"},{\"answer\":\"+\",\"result\":\"True\"},{\"answer\":\"-\",\"result\":\"False\"},{\"answer\":\">>>\",\"result\":\"False\"}]}",
+        "creator": "grooves",
+        "result": 0
     }
-  },
-  {
+},
+{
     "model": "web.exercise",
     "pk": 5,
     "fields": {
-      "session": 1,
-      "text": "What is your favourite language",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
+        "session": null,
+        "text": "Is the following statement true: Any content of the script tag must be enclosed in a special section <! [CDATA [...]]> in order for the document to conform to the XHTML 1.0 standard ?",
+        "answers": "{\"answers\":[{\"answer\":\"Yes\",\"result\":\"False\"},{\"answer\":\"Not\",\"result\":\"True\"}]}",
+        "creator": "groover",
+        "result": 0
     }
-  },
-  {
+},
+{
     "model": "web.exercise",
     "pk": 6,
     "fields": {
-      "session": 1,
-      "text": "What is your favourite language",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
+        "session": null,
+        "text": "What event is not triggered by a mouse click?",
+        "answers": "{\"answers\":[{\"answer\":\"onfocus\",\"result\":\"False\"},{\"answer\":\"onclick\",\"result\":\"False\"},{\"answer\":\"onkeydown\",\"result\":\"True\"},{\"answer\":\"onmousedown\",\"result\":\"False\"}]}",
+        "creator": "groover",
+        "result": 0
     }
-  },
-  {
+},
+{
     "model": "web.exercise",
     "pk": 7,
     "fields": {
-      "session": 1,
-      "text": "What is your favourite language",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
+        "session": null,
+        "text": "In which case from the listed event does not get to javascript processing?",
+        "answers": "{\"answers\":[{\"answer\":\"If at the time of its occurrence another event is processed\",\"result\":\"False\"},{\"answer\":\"Only if javascript is disabled\",\"result\":\"True\"}]}",
+        "creator": "grooves",
+        "result": 0
     }
-  },
-  {
-    "model": "web.exercise",
-    "pk": 8,
-    "fields": {
-      "session": 1,
-      "text": "What is your favourite language",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
-    }
-  },
-  {
-    "model": "web.exercise",
-    "pk": 9,
-    "fields": {
-      "session": 1,
-      "text": "What is your favourite language",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
-    }
-  },
-  {
-    "model": "web.exercise",
-    "pk": 10,
-    "fields": {
-      "session": 1,
-      "text": "What is your favourite language",
-      "answers": "[{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"True\"},{\"answer1\":\"False\"}]",
-      "creator": "Grooves",
-      "result": 0
-    }
-  }
+}
 ]
