@@ -30,6 +30,7 @@ import { StartComponent } from './start/start.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { LiderboardComponent } from './liderboard/liderboard.component';
 import { TestComponent } from './test/test.component';
+import { HttpClientModule }   from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { TestComponent } from './test/test.component';
     RouterModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     NgbModule.forRoot()
   ],
   providers: [],

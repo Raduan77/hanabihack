@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { delay } from 'q';
 
 @Component({
   selector: 'app-progressbar',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.func();
+  }
+
+  async func() {
+    await delay(3000);
+    window.location.href = 'http://localhost:4200/languages?name=Artemiy';
   }
 
 }
