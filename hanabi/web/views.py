@@ -84,4 +84,21 @@ class GetOrCreateSessionAPIView(APIView):
             return Response({"pk": session.pk}, status=status.HTTP_202_ACCEPTED)
 
 
+class TakeResultAPIView(APIView):
+    def calculate_result(self, language, result):
+        member1 = get_object_or_404(models.Member, pk=result[0]["pk"])
+        member2 = get_object_or_404(models.Member, pk=result[1]["pk"])
+        rank1 = models.Rank.objects.get(language=language, user=member1)
+        rank2 = models.Rank.objects.get(language=language, user=member2)
+        rank1.amount += result[0]["diff"]
+        rank2.amount += result[1]["diff"]
+
+    def post(self, request, pk):
+        language = get_object_or_404(models.Session, pk=pk)
+        json = request.data
+        self.calculate_result(language, json)
+        return Response(status.HTTP_200_OK)
+
+
+
 
