@@ -1,60 +1,51 @@
 {
-  "test1": {
-    "questions": [
-      "Is it possible to initiate a DOM event from javascript? For example, to simulate a mouse click on an element so that the javascript code will click on the user.",
-      "Which of these tags comply with the standard HTML (strict)?",
-      "Which operator of these - performs not only mathematical operations?",
-      "Which of these is not a mouse event?",
-      "What constructions for cycles are in javascript?",
-      "In which case from the listed event does not get to javascript processing?",
-      "What event is not triggered by a mouse click?",
-      "Which of these options define an array of the elements 'a', 'b'?",
-      "How many parameters can pass functions?",
-      "Is the following statement true: Any content of the script tag must be enclosed in a special section <! [CDATA [...]]> in order for the document to conform to the XHTML 1.0 standard ?"
+  "questions": [
+    "Is it possible to initiate a DOM event from javascript? For example, to simulate a mouse click on an element so that the javascript code will click on the user.",
+    "Which of these tags comply with the standard HTML (strict)?",
+    "Which operator of these - performs not only mathematical operations?",
+    "Which of these is not a mouse event?",
+    "What constructions for cycles are in javascript?",
+    "In which case from the listed event does not get to javascript processing?",
+    "What event is not triggered by a mouse click?",
+    "Which of these options define an array of the elements 'a', 'b'?",
+    "How many parameters can pass functions?",
+    "Is the following statement true: Any content of the script tag must be enclosed in a special section <! [CDATA [...]]> in order for the document to conform to the XHTML 1.0 standard ?"
+  ],
+  "answers": [
+    ["Yes you can", "No you can not", "In some browsers you can"],
+    [
+      "<script>",
+      "<script type = 'text / javascript'>",
+      "<script type = 'application / x-javascript'>",
+      "<script language = 'javascript'>",
+      "<script language = 'javascript' type = 'text / javascript'>"
     ],
-    "answers": [
-      ["Yes you can", "No you can not", "In some browsers you can"],
-      [
-        "<script>",
-        "<script type = 'text / javascript'>",
-        "<script type = 'application / x-javascript'>",
-        "<script language = 'javascript'>",
-        "<script language = 'javascript' type = 'text / javascript'>"
-      ],
-      ["*", "/", "+", "-", ">>>"],
-      [
-        "onmousescroll",
-        "onclick",
-        "onmouseover",
-        "onmousemove",
-        "onmousewheel"
-      ],
-      [
-        "Only two: for and while .",
-        "Only one: for",
-        "Three: for , while and do ... while"
-      ],
-      [
-        "If at the time of its occurrence another event is processed",
-        "If the page is viewed locally, i.e. offline",
-        "Only if javascript is disabled"
-      ],
-      ["onfocus", "onclick", "onkeydown", "onmousedown"],
-      [
-        "var a = new Array ('a', 'b')",
-        "var a = { 'a', 'b' }",
-        "var a = ( 'a', 'b' )",
-        "var a = [ 'a', 'b' ]"
-      ],
-      [
-        "var a = 'a, b' .split (",
-        ")",
-        "How much is specified in the function definition or less",
-        "How much is indicated in the definition of the function or more",
-        "Any quantity"
-      ],
-      ["Yes", "Not"]
+    ["*", "/", "+", "-", ">>>"],
+    ["onmousescroll", "onclick", "onmouseover", "onmousemove", "onmousewheel"],
+    [
+      "Only two: for and while .",
+      "Only one: for",
+      "Three: for , while and do ... while"
     ],
-    "trues": [1, [2, 3], 3, 1, 3, 3, 3, [1, 4, 5], 4, 2]
-  }
+    [
+      "If at the time of its occurrence another event is processed",
+      "If the page is viewed locally, i.e. offline",
+      "Only if javascript is disabled"
+    ],
+    ["onfocus", "onclick", "onkeydown", "onmousedown"],
+    [
+      "var a = new Array ('a', 'b')",
+      "var a = { 'a', 'b' }",
+      "var a = ( 'a', 'b' )",
+      "var a = [ 'a', 'b' ]"
+    ],
+    [
+      "Exactly as much as specified in the function definition.",
+      "How much is specified in the function definition or less",
+      "How much is indicated in the definition of the function or more",
+      "Any quantity"
+    ],
+    ["Yes", "Not"]
+  ],
+  "trues": [1, 3, 3, 1, 3, 3, 3, 5, 4, 2]
 }

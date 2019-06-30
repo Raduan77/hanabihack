@@ -23,7 +23,7 @@ class Language(models.Model):
 class Rank(models.Model):
     language = models.ForeignKey(Language, on_delete=models.CASCADE)
     user = models.ForeignKey(Member, on_delete=models.CASCADE)
-    amount = models.IntegerField(default=0)
+    amount = models.IntegerField(default=1000)
 
 
 class Session(models.Model):

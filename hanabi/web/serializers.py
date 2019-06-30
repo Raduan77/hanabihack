@@ -12,4 +12,5 @@ class MemberSerializer(serializers.ModelSerializer):
 class LanguageSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Language
-        fields = ("name", "skill")
+        fields = ("name", "skill", "pk")
+

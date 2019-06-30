@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 import json
 import operator
+import random
 
 from rest_framework import status
 from rest_framework.authtoken.models import Token
@@ -50,13 +51,13 @@ class LeaderBoardAPIView(APIView):
             json[member.name] = get_object_or_404(
                 models.Rank, language=language, user=member
             ).amount
-        sorted_json = sorted(json.items(), key= operator.itemgetter(1), reverse=True)
+        sorted_json = sorted(json.items(), key=operator.itemgetter(1), reverse=True)
         return Response(sorted_json, status=status.HTTP_200_OK)
 
 
 class CheckSessionAPIView(APIView):
     def get(self, request, pk):
-        session = get_object_or_404(models.Session)
+        session = get_object_or_404(models.Session, pk=pk)
         return Response({"status": session.is_closed()})
 
 
@@ -85,24 +86,17 @@ class GetOrCreateSessionAPIView(APIView):
 
 
 class TakeResultAPIView(APIView):
-    def calculate_result(self, language, result):
-        member1 = get_object_or_404(models.Member, pk=result[0]["pk"])
-        member2 = get_object_or_404(models.Member, pk=result[1]["pk"])
-        rank1 = models.Rank.objects.get(language=language, user=member1)
-        rank2 = models.Rank.objects.get(language=language, user=member2)
-        rank1.amount += result[0]["diff"]
-        rank2.amount += result[1]["diff"]
-
     def post(self, request, pk):
-        language = get_object_or_404(models.Session, pk=pk)
-        json = request.data
-        self.calculate_result(language, json)
+        member = get_object_or_404(models.Member, user=request.user)
+        session = get_object_or_404(models.Session, pk=pk)
+        language = session.language
+        session.finished = True
+        rank = models.Rank.objects.get(language=language, user=member)
+        rank.amount += random.randint(-30, 30)
         return Response(status.HTTP_200_OK)
 
+
 class GetTestAPIView(APIView):
-    def get(self):
-        return Response(json.load(open('/web/questions/questions.json')))
-
-
-
+    def get(self, request):
+        return Response(json.load(open("web/questions/questions.json")))
 

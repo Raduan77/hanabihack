@@ -24,6 +24,7 @@ class Forkwell_parser:
             "css",
             "logos",
             "racket",
+            "swift",
         }
         self.path = f"https://portfolio.forkwell.com/@{self.user_name}"
         req = Request(self.path, headers=HEADERS)
