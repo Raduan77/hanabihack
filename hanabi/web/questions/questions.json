@@ -12,7 +12,7 @@
     "Is the following statement true: Any content of the script tag must be enclosed in a special section <! [CDATA [...]]> in order for the document to conform to the XHTML 1.0 standard ?"
   ],
   "answers": [
-    ["Yes you can", "No you can not", "In some browsers you can"],
+    ["Yes you can", "No you can not", "In some browsers you can", "Only with special configuration"],
     [
       "<script>",
       "<script type = 'text / javascript'>",
@@ -25,12 +25,14 @@
     [
       "Only two: for and while .",
       "Only one: for",
-      "Three: for , while and do ... while"
+      "Three: for , while and do ... while",
+      "Only two: while and do...while"
     ],
     [
       "If at the time of its occurrence another event is processed",
       "If the page is viewed locally, i.e. offline",
-      "Only if javascript is disabled"
+      "Only if javascript is disabled",
+      "If the order is not described"
     ],
     ["onfocus", "onclick", "onkeydown", "onmousedown"],
     [
