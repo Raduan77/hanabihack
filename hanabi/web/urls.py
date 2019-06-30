@@ -24,10 +24,20 @@ api_urls = [
         name="find-session",
     ),
     path(
-        "api/v1/session/<int:pk>/check",
+        "api/v1/result/<int:pk>/check",
         views.CheckSessionAPIView.as_view(),
         name="check-session",
     ),
+    path(
+        "api/v1/test/gettest",
+        views.GetTestAPIView.as_view(),
+        name="get-test",
+    ),
+    path(
+        "api/v1/test/gettest",
+        views.GetTestAPIView.as_view(),
+        name="get-test",
+    ),path("api/v1/session/<int:pk>/submit",views.TakeResultAPIView.as_view(),name="submit-test")
 ]
 
 urlpatterns = api_urls

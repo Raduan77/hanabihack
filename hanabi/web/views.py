@@ -99,6 +99,10 @@ class TakeResultAPIView(APIView):
         self.calculate_result(language, json)
         return Response(status.HTTP_200_OK)
 
+class GetTestAPIView(APIView):
+    def get(self):
+        return Response(json.load(open('/web/questions/questions.json')))
+
 
 
 
